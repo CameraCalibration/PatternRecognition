@@ -13,10 +13,57 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Archivos de recursos\images">
+      <UniqueIdentifier>{230f194b-746a-4f3e-81ee-d98163a115d2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="images\Captura1.PNG">
+      <Filter>Archivos de recursos\images</Filter>
+    </Image>
+    <Image Include="images\Captura2.PNG">
+      <Filter>Archivos de recursos\images</Filter>
+    </Image>
+    <Image Include="images\Captura3.PNG">
+      <Filter>Archivos de recursos\images</Filter>
+    </Image>
+    <Image Include="images\Captura4.PNG">
+      <Filter>Archivos de recursos\images</Filter>
+    </Image>
+    <Image Include="images\Captura5.PNG">
+      <Filter>Archivos de recursos\images</Filter>
+    </Image>
+    <Image Include="images\Captura6.PNG">
+      <Filter>Archivos de recursos\images</Filter>
+    </Image>
+    <Image Include="images\Captura11.PNG">
+      <Filter>Archivos de recursos\images</Filter>
+    </Image>
+    <Image Include="images\Captura12.PNG">
+      <Filter>Archivos de recursos\images</Filter>
+    </Image>
+    <Image Include="images\Captura13.PNG">
+      <Filter>Archivos de recursos\images</Filter>
+    </Image>
+    <Image Include="images\Captura14.PNG">
+      <Filter>Archivos de recursos\images</Filter>
+    </Image>
+    <Image Include="images\Captura15.PNG">
+      <Filter>Archivos de recursos\images</Filter>
+    </Image>
+    <Image Include="images\Captura16.PNG">
+      <Filter>Archivos de recursos\images</Filter>
+    </Image>
+    <Image Include="images\marker.png">
+      <Filter>Archivos de recursos\images</Filter>
+    </Image>
+    <Image Include="images\pattern.png">
+      <Filter>Archivos de recursos\images</Filter>
+    </Image>
   </ItemGroup>
 </Project>

@@ -21,6 +21,22 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="images\Captura1.PNG" />
+    <Image Include="images\Captura11.PNG" />
+    <Image Include="images\Captura12.PNG" />
+    <Image Include="images\Captura13.PNG" />
+    <Image Include="images\Captura14.PNG" />
+    <Image Include="images\Captura15.PNG" />
+    <Image Include="images\Captura16.PNG" />
+    <Image Include="images\Captura2.PNG" />
+    <Image Include="images\Captura3.PNG" />
+    <Image Include="images\Captura4.PNG" />
+    <Image Include="images\Captura5.PNG" />
+    <Image Include="images\Captura6.PNG" />
+    <Image Include="images\marker.png" />
+    <Image Include="images\pattern.png" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{46FDB50F-7AD7-4575-B3E6-64F560B6AF9F}</ProjectGuid>

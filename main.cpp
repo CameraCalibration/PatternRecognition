@@ -27,7 +27,7 @@ struct node {
 	int count;
 	float w;
 
-	node(Point center, int count, int w)
+	node(Point center, int count, float w)
 	{
 		this->center = center;
 		this->count = count;
@@ -54,7 +54,6 @@ int main(int argc, char** argv)
 	threshold(src_gray, src_gray, 100, 255, 3);
 
 	/// Create Window
-	//char* source_window = "Source";
 	namedWindow("Source", CV_WINDOW_AUTOSIZE);
 	imshow("Source", src);
 
@@ -94,7 +93,7 @@ void thresh_callback(int, void*)
 		}
 	}
 
-	/// Draw contours + rotated rects + ellipses
+	// Draw ellipses
 	Mat drawing = Mat::zeros(threshold_output.size(), CV_8UC3);
 	Point2f last(-10, -10);
 	std::vector<node> centers;
@@ -102,9 +101,6 @@ void thresh_callback(int, void*)
 	for (int i = 0; i < contours.size(); i++)
 	{
 		Scalar color = Scalar(rng.uniform(0, 255), rng.uniform(0, 255), rng.uniform(0, 255));
-		// contour
-		//drawContours(drawing, contours, i, color, 1, 8, vector<Vec4i>(), 0, Point());
-		// ellipse
 		Point2f np(minEllipse[i].center.x, minEllipse[i].center.y);
 		if (norm(last - np) < 5) {
 			centers[n - 1].count++;
@@ -116,14 +112,9 @@ void thresh_callback(int, void*)
 		}
 		else {
 			n++;
-			node nd(np, 1, pow(minEllipse[i].size.area(), 3));
-			centers.push_back(nd);
+			centers.push_back(node(np, 1, pow(minEllipse[i].size.area(), 3)));
 		}
 		last = np;
-		// rotated rectangle
-		/*Point2f rect_points[4]; minRect[i].points(rect_points);
-		for (int j = 0; j < 4; j++)
-			line(drawing, rect_points[j], rect_points[(j + 1) % 4], color, 1, 8);*/
 	}
 
 	std::vector<Point2f> PointBuffer;
