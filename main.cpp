@@ -39,7 +39,7 @@ struct node {
 int main(int argc, char** argv)
 {
 	/// Load source image and convert it to gray
-	src = imread("images/Captura16.PNG", 1);
+	src = imread("images/pattern_01.PNG", 1);
 
 	/// Convert image to gray and blur it
 	cvtColor(src, src_gray, CV_BGR2GRAY);
@@ -124,7 +124,7 @@ void thresh_callback(int, void*)
 			PointBuffer.push_back(center.center);
 	}
 
-	cv::drawChessboardCorners(src, Size(6, 5), PointBuffer, true);
+	cv::drawChessboardCorners(src, Size(5, 4), PointBuffer, true);
 	namedWindow("Pattern", CV_WINDOW_AUTOSIZE);
 	imshow("Pattern", src);
 
