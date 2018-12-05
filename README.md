@@ -18,7 +18,7 @@ Pattern Recognition for Grid of Rings
  
  *  Added the project clonned to solution created before.
  *  Inside the configuration of the project in VisualStudio configure the paths to include and libraries of OpenCV. You could follow this tutorial: [Opencv/VisualStudio2017](http://aprendiendoingenieria.es/instalar-opencv-con-visual-studio-2017/)
- *  Finaly, build the project with VisualStudio.
+ *  Finally, build the project with VisualStudio.
  
 ## Contact
 If you need any help you can contact me to:
